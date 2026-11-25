@@ -18,6 +18,7 @@ Complete, 100% free local code-driven video production suite (FFmpeg, `faster-wh
 | **Procedural 3D Motion (Three.js r186+)** | [`references/motion3d-19-styles.md`](references/motion3d-19-styles.md) | Exploded hardware (`PRECISION`, `BONGKAR`), Voxel/HD-2D (`VOXELVERSE`, `PIXELSTORY`), Paperworld dioramas, & R3F/WebGPU guardrails |
 | **Reference Deconstruction & Directing** | [`references/video-director-pipeline.md`](references/video-director-pipeline.md) | `yt-dlp` + `ffprobe` + `Loud word` beat tables, `#00FF00`/`#000000` free asset prompts, SFX-only SaaS/Vox grammar, & Pre-Final Visual Self-QA |
 | **Open-Source Video Tooling & Benchmarks** | [`references/open-source-video-stack.md`](references/open-source-video-stack.md) | 15-repo stack (`claude-shorts`, `threejs-skills`, `OpenMontage`, `MotionClone`, `Barty-Bart`, render speed benchmarks) |
+| **Multi-TTS, Audio Ducking & 9:16 Kinematics** | [`references/tts-providers.md`](references/tts-providers.md) + [`references/audio-ducking-sfx.md`](references/audio-ducking-sfx.md) + [`references/3d-kinematics-engine.md`](references/3d-kinematics-engine.md) + [`references/vertical-9-16-recipes.md`](references/vertical-9-16-recipes.md) | Gemini API / Fish Audio / Edge-TTS voiceovers, sidechain BGM ducking, & 9:16 web-animation kinematics |
 
 ---
 
