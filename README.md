@@ -25,7 +25,7 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 
 - **Runtime / Tools**: **Python 3.10+**, **FFmpeg**, **Node.js 18+** (for Remotion/Three.js), **faster-whisper** (local STT), **Playwright** (optional IG/web reference capture)
 - **MCP Servers**: Optional: `edge-tts-mcp` (free TTS), `ffmpeg-skill` / `kinocut` (timeline/cut helpers)
-- **Related Skills**: Optional pairing with [`director`](https://github.com/triwahyu45/director) & [`samurai`](https://github.com/triwahyu45/samurai)
+- **Related Skills**: Optional pairing with [`director`](https://github.com/triwahyu45/DIRECTOR) & [`samurai`](https://github.com/triwahyu45/SAMURAI)
 - **API Keys / Secrets**: None for local mode (`edge-tts`, `faster-whisper`, `FFmpeg`). Optional: `$GEMINI_API_KEY` or `$FISH_AUDIO_API_KEY` for cloud TTS.
 
 ```json
