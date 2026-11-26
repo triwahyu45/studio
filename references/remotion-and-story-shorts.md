@@ -22,7 +22,7 @@
   2. **Setting**: Year, place, stakes.
   3. **Escalating Action (3–4 beats)**: Each beat raises physical or absurd tension.
   4. **Snap + Deadpan Double Line**: Visual climax + *"Luckily... / Unluckily..."* contrast.
-  5. **Everyday Analogy + Consequence + Callback Twist**: Explain physics/mechanism simply, show rule it created, and close with callback punchline.
+  5. **Everyday Analogy + Consequence + Callback Twist**: Explain physics/mechanism simply, show the lasting consequence, and close with callback punchline.
 - **Frame-Exact Audio/Visual Sync**: Generate voiceover first, extract exact word timings (`words.json`), and time every camera kick, prop swap, and character reaction **0–3 frames before its trigger word**. Never overlay on-screen captions when visuals already tell the story.
 - **Audio Mix Baseline**: Keep narration dry/unchanged (`0 dB`), SFX around `-6 dB`, and duck BGM cleanly under speech before final `-14 LUFS` normalize.
 - **4-Round Visual Verifier Loop**: Extract stills at key beats (`HOOK`, `SNAP`, `ANALOGY`, `OUTRO`), inspect via `read_file` for clipped props/dark frames/muddy silhouettes, and iterate lighting/camera FOV until clean.
