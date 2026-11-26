@@ -24,8 +24,8 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 ## Requirements & Dependencies (For Agents)
 
 - **Runtime / Tools**: **Python 3.10+**, **FFmpeg**, **Node.js 18+** (for Remotion/Three.js), **faster-whisper** (local STT), **Playwright** (optional IG/web reference capture)
-- **MCP Servers**: Optional: `ffmpeg-skill` / `kinocut` (timeline/cut helpers); pair with `SONIC` (`earshot`, `edge-tts-mcp`) for audio
-- **Related Skills**: Pairs with [`DIRECTOR`](https://github.com/triwahyu45/DIRECTOR), [`SAMURAI`](https://github.com/triwahyu45/SAMURAI), [`SONIC`](https://github.com/triwahyu45/SONIC) (audio/TTS/SFX), & [`ATELIER`](https://github.com/triwahyu45/ATELIER) (Blender PBR)
+- **MCP Servers**: Optional: `kura` (3D asset vault + 2,500+ CC0 index), `ffmpeg-skill` / `kinocut` (timeline/cut helpers); pair with `SONIC` (`earshot`, `edge-tts-mcp`) for audio
+- **Related Skills**: Pairs with [`KURA`](https://github.com/triwahyu45/KURA) (3D asset vault), [`DIRECTOR`](https://github.com/triwahyu45/DIRECTOR), [`SAMURAI`](https://github.com/triwahyu45/SAMURAI), [`SONIC`](https://github.com/triwahyu45/SONIC) (audio/TTS/SFX), & [`ATELIER`](https://github.com/triwahyu45/ATELIER) (Blender PBR)
 - **API Keys / Secrets**: None for local mode (`faster-whisper`, `FFmpeg`, Three.js/Remotion).
 
 ```json

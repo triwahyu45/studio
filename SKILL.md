@@ -16,7 +16,7 @@ Complete, 100% free local code-driven video production suite (FFmpeg, `faster-wh
 | :--- | :--- | :--- |
 | **Talking-Head / Creator Edit / Longform Clipper** | [`references/talking-head-presets.md`](references/talking-head-presets.md) + [`scripts/analyze_footage.py`](scripts/analyze_footage.py) | 60fps/30fps MP4 with silence auto-cut, 5-dim viral clip scoring, cursor tracking, depth-text behind speaker (`DEPTH`, `LUMEN`), & 15 named effects |
 | **2D / 2.5D Voiceover Explainer** | [`references/mograph-24-styles.md`](references/mograph-24-styles.md) | Frame-synced 9:16 or 16:9 explainers across 24+ editorial, isometric, tech UI, folklore, retro, & map presets |
-| **Procedural 3D Motion (Three.js r186+)** | [`references/motion3d-19-styles.md`](references/motion3d-19-styles.md) | Exploded hardware (`PRECISION`, `BONGKAR`), Voxel/HD-2D (`VOXELVERSE`, `PIXELSTORY`), Paperworld dioramas, & R3F/WebGPU guardrails |
+| **Procedural 3D Motion (Three.js r186+)** | [`references/motion3d-19-styles.md`](references/motion3d-19-styles.md) + **`KURA`** | Pick-first 3D assets via `kura` MCP, exploded hardware (`PRECISION`, `BONGKAR`), Zack D (`ZACK-EXPLAINER`), 8-bit (`PIXEL-8BIT`), `STUDIO-BENCH`, `SIM-GRID`, & R3F/WebGPU guardrails |
 | **Reference Deconstruction & Directing** | [`references/video-director-pipeline.md`](references/video-director-pipeline.md) | `yt-dlp` + `ffprobe` + `Loud word` beat tables, `#00FF00`/`#000000` free asset prompts, SFX-only SaaS/Vox grammar, & Pre-Final Visual Self-QA |
 | **Open-Source Video Tooling & Benchmarks** | [`references/open-source-video-stack.md`](references/open-source-video-stack.md) | 15-repo stack (`claude-shorts`, `threejs-skills`, `OpenMontage`, `MotionClone`, `Barty-Bart`, render speed benchmarks) |
 | **Audio, TTS & `-14 LUFS` Mastering** | Delegate to **`SONIC`** + [`references/3d-kinematics-engine.md`](references/3d-kinematics-engine.md) + [`references/vertical-9-16-recipes.md`](references/vertical-9-16-recipes.md) | Multi-provider TTS, `earshot`/Openverse SFX, sidechain BGM ducking, `-14 LUFS`, & 9:16 web kinematics |
@@ -29,6 +29,7 @@ Complete, 100% free local code-driven video production suite (FFmpeg, `faster-wh
 1. **Pre-Final Visual Self-QA Gate**: Render a fast test pass/contact sheet first and inspect for text overlap, label collision, hard bottom edges on screen-blended fire/effects, cropped push-in text, and `#00FF00` halos before final render.
 2. **Audio & Loudness**: Prefer **SFX-ONLY (no music)** for SaaS Launch & Vox Editorial cuts, or duck BGM under narration; verify `-14 LUFS` & H.264/AAC via `ffprobe`.
 3. **Safe Margins (9:16)**: Keep captions inside `top >= 14%`, `bottom <= 78%`, `right >= 120px` on `1080x1920`.
+4. **`KURA` Pick-First 3D Asset Loop**: Always query `kura` MCP (`search_assets`) first -> pick local or `fetch_cc0_asset` -> build procedural `.js` only when missing and persist via `save_asset` -> on user revision, call `revise_asset` so upgrades persist for all future videos.
 ---
 
 ## Mandatory Self-Audit & Revise-Before-Delivery Gate

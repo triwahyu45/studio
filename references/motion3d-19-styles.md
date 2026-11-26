@@ -52,6 +52,8 @@ Production blueprints for rendering 60fps/30fps procedural 3D shorts (9:16 `1080
 | **CERDIK** | Warm indoor key light + soft shadow | 2D/3D cel-shaded flat-face character with crisp black ink outlines (directly compatible with `cartoon-3d-short` skill) | Bold clean centered white subtitle |
 | **PANELVERSE** | Flat comic page lighting (`#F5EFE0` paper) | Animated 3-panel vertical comic strip with speedline sunbursts (`#EF4444`/`#FACC15`) & panel-by-panel reveal | Crisp black comic panel borders (`4px solid #09090B`) |
 | **TIPIKAL** | Bright cel-shaded street scene | Bold black-outlined cel-shaded characters on scooter/street + animated white comic speech bubbles | Top dual-color banner (`TIPE-TIPE PENGENDARA MOTOR`) |
+| **ZACK-EXPLAINER** | Clean soft-studio blue/neutral backdrop, soft key + rim light, zero-cut continuous macro camera move (wide → macro interior payoff → pull back) | Pick-from-`KURA` stylized matte-clay character + cutaway anatomy/mechanics (`stylized_human_rig`, `piston_engine_cutaway`, CC0 `.glb`); build missing props procedurally in Three.js (`~30 min` render, no Blender) | Minimal or zero text on screen + calm single narrator (`Question -> What happens inside? -> Visual payoff -> Back to start`) |
+| **PIXEL-8BIT** | Retro 8-bit `1080×1920` dark arcade stage with crisp `NearestFilter` / `image-rendering: pixelated` sprites | 2D pixel-art characters & `KURA` `pixel_8bit_voxel_prop` 3D voxel extrusions animated on quantized 12fps/15fps stepped motion | Retro RPG dialog HUD boxes, pixel health/progress bars, punchy captions, & `SONIC` / `earshot` chiptune SFX |
 
 ---
 
