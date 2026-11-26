@@ -14,6 +14,7 @@ Production blueprints for rendering 60fps/30fps procedural 3D shorts (9:16 `1080
 | **INNERWORKS** | Bright isometric architectural studio (`#F1F5F9`) | Cutaway multi-floor shaft/machine with animated elevator car, pulleys, cables, and gears | Clean top pill indicator (`LANTAI 3`) + crisp technical arrows |
 | **BEDAH** | Natural daylight directional sun + soft sky fill | 3D cross-section building sitting atop multi-layered soil/rock subsurface cutaway (`#78350F` / `#451A03`) | Clean lower-third narration subtitle |
 | **BUILDFORGE** | Soft daylight architectural viz | Procedural house assembly: foundation → columns → walls → glass → roof snapping into place with spring bounce | Minimal top-left chapter tag (`04 RUMAH HIDUP`) |
+| **STUDIO-BENCH** | Persistent moody dark virtual studio set (`#11151C` concrete/walnut desk, practical desk lamp, wall monitor), focused top softbox key + rim light + shallow DoF (`f/2.8` bokeh) — reuse 1 set and swap only the hero prop per video | Deterministic PBR cutaway/macro 3D props (anisotropic metal, matte rubber, cooling fins, tubular spaceframe, tangible unit-analogy objects like marbles on a ruler) + in-world 2D charts mapped to studio screens; smooth dolly-in, low-angle orbit, and top-down schematic cuts | 3D-tracked dark frosted callout pins (`rgba(15,20,28,0.85)`) with `#38BDF8` cyan / `#F59E0B` amber anchor dot + thin vertical leader line + micro gray source citation + 1–2 keyword-highlighted bottom subtitles |
 
 ---
 
@@ -61,3 +62,12 @@ When generating procedural 3D scenes with modern **Three.js (`r186+`)**, **React
 - **Post-Processing**: Use `RenderPipeline` (replaces legacy `PostProcessing` / `EffectComposer` patterns).
 - **Renderer**: WebGL 1 support is removed; target `WebGLRenderer` (WebGL 2) or `WebGPURenderer` with **TSL (Three Shading Language)** for custom shaders/materials.
 - **High-Count Instancing**: Use `BatchedMesh` / `InstancedMesh` for cityscapes (`WORLDFORGE-ROMA`, `WORLDFORGE-MARS`) and crowd/prop scenes (`NEKAT`) to keep 60fps render times fast.
+
+---
+
+## 6. Persistent 3D Studio & Blender Cycles/EEVEE Hybrid Option
+
+When an explainer requires photorealistic macro PBR (anisotropic brushed copper/metal, realistic bokeh DoF, path-traced roughness) beyond fast WebGL:
+1. Model mechanical or cutaway hero props parametrically in `FORGE` (FreeCAD STEP/OBJ/glTF).
+2. Render in Blender Cycles/EEVEE (`blender-creation`) inside **1 reusable persistent studio `.blend` set** (swapping only the hero prop per episode).
+3. Composite 2D HUD callout pins, data charts, and `-14 LUFS` VO (`110–125 WPM`) via Remotion/FFmpeg.

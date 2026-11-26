@@ -12,6 +12,7 @@ Never study a reference Reel, TikTok, or Short by stepping through screenshots i
    ```powershell
    yt-dlp --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "<scratch>\ref.%(ext)s" "<URL>"
    ```
+   - **Instagram Profile Batch Discovery (Headless CLI):** When given a public Instagram profile URL (which `yt-dlp` does not support directly), use headless Playwright (`chromium.launch(headless=True)`) to scrape all public `/reel/<shortcode>/` links from the profile HTML, then batch-download each Reel with `yt-dlp --no-playlist`, transcribe with `faster-whisper`, and generate `ffmpeg` contact sheets — no Chrome Remote Debugging required.
    - **Instagram Blocked Fallback (`Instagram sent an empty media response`):** Intercept the `video/` stream URL cleanly with Playwright (`page.on("response", ...)` matching `content-type: video/`, stripping `&bytestart`) to download the full 1080p MP4 stream.
 2. **Probe technical specs:**
    ```powershell
@@ -34,6 +35,7 @@ Write a tight, spoken-word script structured around clear narrative tension befo
 3. **The Mechanism / Shift:** Reveal the structured system (`01`–`05` pillars) with concrete proof.
 4. **75 / 25 Creative Split:** The director system handles 75% of execution (pacing, curves, captions, sound), leaving 25% for the creator's idea and taste.
 5. **Word-Budget Check & Loud-Word Beat Table:** Target ~140–170 WPM and structure every beat in a `Time | What happens | Loud word` table where each `2.5–4.0 s` beat designates **one Loud word** (e.g., `SECONDS`, `spark`, `died`, `survived`) that triggers the hero visual emphasis (scale jump, highlighter wipe, red glow, or stamp slam) + frame-locked SFX hit.
+   - **Calm Engineering Documentary Pacing Option (`110–125 WPM`):** For technical/engineering explainers (`STUDIO-BENCH`), slow narration down to `110–125 WPM` with `0.3–0.5s` breathing pauses between sentences so viewers can read 3D callout pins, formulas, and source citations.
 
 ---
 
@@ -60,6 +62,7 @@ Build scenes deterministically in **Remotion + Three.js / React / CSS** (zero Af
   - **SaaS Launch Grammar:** 1 accent color + neutral grotesk (`Inter Tight`/`Inter`, `Geist`, `Instrument Sans`, `Bricolage Grotesque`, `Plus Jakarta Sans`), UI components that morph across **one continuous camera space**, **halftone dot-ripple** transitions, **3D UI slab tilt** (`2D -> 3D isometric`), tactile 3D hardware (`keycap macro-pad + LCD`), and **SFX-ONLY (NO MUSIC)**.
   - **Vox Editorial Collage Grammar:** Physical paper/newspaper objects on a desk, **torn-paper wipe transitions**, **yellow highlighter sweep**, **digit-by-digit odometer roll** (right-most digits spin fastest), **colour-drain desaturation** on dramatic beats, **animated partly on 2s** (`12/15 fps` tactile cadence inside `30 fps` render), and **SFX-ONLY (NO MUSIC)**.
   - **Interactive SaaS Demo Card + Cutout Presenter (`@awananimasi.id`):** Graph-paper dark/saturated grid canvas (`#0F172A`, `#2E1065`, `#064E3B`, `#FACC15`, `#EA580C`), top-right `01..09` icon progress pill bar, macOS-framed live UI card with tab switching & animating charts, plus bottom-corner cutout presenter + pixel mascot helper with speech bubbles.
+  - **Engineering Documentary Grammar (`@sekilokarbon` / `STUDIO-BENCH`):** 1 persistent dark studio workbench reused across episodes (hero-prop swapping), tangible unit-to-physical-object analogies (e.g., `30 J/m -> 3 marbles on a ruler`), 3D-tracked frosted callout pins with thin vertical leader lines & primary-source citations (`IEA`, `ABB`, official standards), 2D charts embedded on in-world studio screens, dual-accent palette (`#38BDF8` cyan / `#F59E0B` amber), and calm `110–125 WPM` VO mastered strictly to `-14 LUFS` (`LRA 2–4 LU`).
 - **3D Worlds & Camera Moves:**
   - Stylized 3D scenes (voxel/low-poly desk, director chair, holographic curved UI screens, floating 3D cartridge/handheld) with continuous orbital drift and eased dolly-ins.
   - Custom easing curves (`cubic-bezier` / `spring()`)—never linear motion on hero transitions.
