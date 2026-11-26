@@ -52,6 +52,7 @@ When generating custom foreground objects or atmospheric overlays with free tool
 
 Build scenes deterministically in **Remotion + Three.js / React / CSS** (zero After Effects or manual keyframes):
 - **Storyboard Grid (`02`):** Plan 6–12 numbered panels (`01`..`12`) specifying **Anchor Object**, **Camera Vector**, and **Transition Type** (whip-pan, zoom-through-screen, spotlight reveal, card fan-out).
+- **3×4 Visual Storyboard Pre-Vis:** For 45–60s vertical explainers, break the script into **10–12 scenes (3–5s each)** and generate **1 unified 3×4 Storyboard Grid image** via the `image-generator` subagent before writing 3D scene code so spatial staging, metaphors, and character poses lock in upfront and cut revision rounds.
 - **2D Motion Graphics:**
   - Corkboard / evidence pins + animated SVG red-yarn / circle strokes (`strokeDashoffset`).
   - Realistic UI mockups (chat prompt bar, NLE timeline, YouTube player, comment feed) rendered in clean HTML/Tailwind—never static low-res screenshots.
@@ -85,3 +86,4 @@ When footage includes a talking head or voiceover track:
    - (4) text cropped during camera push-in,
    - (5) green `#00FF00` chroma-key halo.
    Fix all defects, then run final render and verify `MP4` with `ffprobe` (resolution, fps, H.264/AAC) before delivering.
+4. **Fast `--qa-only` 5-Point Calibration & 30fps Draft -> 60fps Final:** Run a fast `--qa-only` pass (~15s) outputting `qa_sheet.jpg` + `cover.png` (4:5 safe check) to audit 5 points: (1) header/logo margin, (2) 2D B-roll clear of character head, (3) 3D character/prop proportions, (4) bottom-safe subtitles locked to canonical script spelling, and (5) visual/pose/background variety every `<= 3s`. Use `30fps` for motion drafts and `60fps` (`1080×1920`, H.264 + AAC) for the approved final render.

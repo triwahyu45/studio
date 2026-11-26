@@ -86,3 +86,17 @@ To eliminate Canvas 2D font distortion and thick stroke artifacting, use real DO
 4. **Sensory Breakdown Flowchart**: Visual step cards with glowing connector dots (`Kamera AI -> Sensor Induktif -> Sensor Jarak`).
 5. **Actuator & Physics Simulation**: Top-down arena view showing conveyor sorting and 4-wheel mecanum vector arrows.
 6. **Closing Pride Card**: Team podium photo and inspiring national impact statement.
+
+---
+
+## 4. 5-Zone Brand-Chibi 3D Layout & Separate 4:5 Feed Cover
+
+### 5 Mandatory Vertical Zones (`1080×1920`)
+1. **Header Zone**: Compact avatar, `@username`, and brand logo cleanly inset from top and side margins.
+2. **Upper 2D B-Roll Zone**: High-contrast info cards or real screenshots framed inside clean 2D browser/UI cards — **must never overlap the 3D character's head**.
+3. **Center 3D Stage**: Expressive 3D character (lip-sync + pose changes) with diegetic 3D props (floating boards, scales, monitors) and **>= 5 distinct bokeh 3D room/world backgrounds** rotating every `<= 3s`.
+4. **Active-Word Subtitle Zone**: Translucent glass/pill container with bold active-word color highlight.
+5. **Empty Bottom Safe Zone**: Strictly clear of TikTok/Reels/Shorts bottom UI buttons.
+
+### Separate 4:5 Instagram Feed Cover (`cover.png`)
+- Always generate a dedicated `cover.png` alongside the 9:16 video with a **centered 4:5 safe crop box** (max **2-line headline** + centered 3D hero character) so the thumbnail never crops awkwardly on Instagram profile grids.

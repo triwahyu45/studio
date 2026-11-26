@@ -74,3 +74,17 @@ uvx edge-tts --voice "id-ID-ArdiNeural" --rate="+15%" --pitch="+2Hz" --text "...
 # Crisp Female Analyst (+10% rate)
 uvx edge-tts --voice "id-ID-GadisNeural" --rate="+10%" --pitch="+1Hz" --text "..." --write-media out2.mp3
 ```
+
+---
+
+## 4. Free-Tier Voice Clone & Browser Speech Options
+
+- **Minimax Audio (Free-Tier Voice Clone)**: Strong Indonesian fluency with free-tier voice cloning; a solid alternative before paying for ElevenLabs/Cartesia.
+- **Google AI Studio Generate Speech**: Free browser-based speech synthesis (`aistudio.google.com`) with directable speaking style via a standard Google account.
+
+---
+
+## 5. Dry VO Tuning & Canonical Original-Script Ground-Truth
+
+- **Dry VO Preparation**: Always export **Dry VO (zero background music)** for accurate lip-sync and forced alignment; trim silence gaps **`> 0.3s`** tight and nudge playback tempo to **`1.1x–1.2x`** so short-form pacing stays lively.
+- **Canonical Original-Script Ground-Truth**: Never trust raw Whisper/ASR/CapCut `.srt` spelling blindly (ASR regularly mishears domain terms, e.g., `"si AI"` -> `"CIA"`). Always align ASR word timestamps against the **user's canonical original script** so rendered captions and B-roll keywords are 100% typo-free.
