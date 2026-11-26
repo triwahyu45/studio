@@ -14,6 +14,7 @@ Never study a reference Reel, TikTok, or Short by stepping through screenshots i
    ```
    - **Instagram Profile Batch Discovery (Headless CLI):** When given a public Instagram profile URL (which `yt-dlp` does not support directly), use headless Playwright (`chromium.launch(headless=True)`) to scrape all public `/reel/<shortcode>/` links from the profile HTML, then batch-download each Reel with `yt-dlp --no-playlist`, transcribe with `faster-whisper`, and generate `ffmpeg` contact sheets — no Chrome Remote Debugging required.
    - **Instagram Blocked Fallback (`Instagram sent an empty media response`):** Intercept the `video/` stream URL cleanly with Playwright (`page.on("response", ...)` matching `content-type: video/`, stripping `&bytestart`) to download the full 1080p MP4 stream.
+   - **Mandatory Post-Analysis Media Cleanup:** Immediately delete temporary downloaded `.mp4`, `.wav`, raw frame dumps (`_frames_*`), and `.info.json` from scratch once transcripts, contact sheets, and skill learnings are extracted so large reference videos never accumulate on disk.
 2. **Probe technical specs:**
    ```powershell
    ffprobe -v error -show_entries format=duration,bit_rate:stream=codec_type,codec_name,width,height,r_frame_rate -of json "<scratch>\ref.mp4"
@@ -36,6 +37,7 @@ Write a tight, spoken-word script structured around clear narrative tension befo
 4. **75 / 25 Creative Split:** The director system handles 75% of execution (pacing, curves, captions, sound), leaving 25% for the creator's idea and taste.
 5. **Word-Budget Check & Loud-Word Beat Table:** Target ~140–170 WPM and structure every beat in a `Time | What happens | Loud word` table where each `2.5–4.0 s` beat designates **one Loud word** (e.g., `SECONDS`, `spark`, `died`, `survived`) that triggers the hero visual emphasis (scale jump, highlighter wipe, red glow, or stamp slam) + frame-locked SFX hit.
    - **Calm Engineering Documentary Pacing Option (`110–125 WPM`):** For technical/engineering explainers (`STUDIO-BENCH`), slow narration down to `110–125 WPM` with `0.3–0.5s` breathing pauses between sentences so viewers can read 3D callout pins, formulas, and source citations.
+   - **Rapid Technical Breakdown Pacing Option (`185–240 WPM`):** For dense `60 fps` engineering/robotics explainers (`SIM-GRID`), pair tight rapid narration (`185–240 WPM`) with real-time math/simulation visuals and 1-line highlighted center-bottom captions.
 
 ---
 
@@ -63,6 +65,7 @@ Build scenes deterministically in **Remotion + Three.js / React / CSS** (zero Af
   - **Vox Editorial Collage Grammar:** Physical paper/newspaper objects on a desk, **torn-paper wipe transitions**, **yellow highlighter sweep**, **digit-by-digit odometer roll** (right-most digits spin fastest), **colour-drain desaturation** on dramatic beats, **animated partly on 2s** (`12/15 fps` tactile cadence inside `30 fps` render), and **SFX-ONLY (NO MUSIC)**.
   - **Interactive SaaS Demo Card + Cutout Presenter (`@awananimasi.id`):** Graph-paper dark/saturated grid canvas (`#0F172A`, `#2E1065`, `#064E3B`, `#FACC15`, `#EA580C`), top-right `01..09` icon progress pill bar, macOS-framed live UI card with tab switching & animating charts, plus bottom-corner cutout presenter + pixel mascot helper with speech bubbles.
   - **Engineering Documentary Grammar (`@sekilokarbon` / `STUDIO-BENCH`):** 1 persistent dark studio workbench reused across episodes (hero-prop swapping), tangible unit-to-physical-object analogies (e.g., `30 J/m -> 3 marbles on a ruler`), 3D-tracked frosted callout pins with thin vertical leader lines & primary-source citations (`IEA`, `ABB`, official standards), 2D charts embedded on in-world studio screens, dual-accent palette (`#38BDF8` cyan / `#F59E0B` amber), and calm `110–125 WPM` VO mastered strictly to `-14 LUFS` (`LRA 2–4 LU`).
+  - **Physics-First Technical Sim Grammar (`@alloyrobotics` / `SIM-GRID`):** `Python/NumPy` solver output exported to frame-locked JSON → `60 fps` Three.js/Remotion with glowing blueprint grid floor or persistent workshop workbench, `InstancedMesh` voxel matrices (A* costmaps / CNN feature maps), LaTeX math overlays, and dense `185–240 WPM` VO mastered to `-14.4 LUFS`.
 - **3D Worlds & Camera Moves:**
   - Stylized 3D scenes (voxel/low-poly desk, director chair, holographic curved UI screens, floating 3D cartridge/handheld) with continuous orbital drift and eased dolly-ins.
   - Custom easing curves (`cubic-bezier` / `spring()`)—never linear motion on hero transitions.

@@ -15,6 +15,7 @@ Production blueprints for rendering 60fps/30fps procedural 3D shorts (9:16 `1080
 | **BEDAH** | Natural daylight directional sun + soft sky fill | 3D cross-section building sitting atop multi-layered soil/rock subsurface cutaway (`#78350F` / `#451A03`) | Clean lower-third narration subtitle |
 | **BUILDFORGE** | Soft daylight architectural viz | Procedural house assembly: foundation → columns → walls → glass → roof snapping into place with spring bounce | Minimal top-left chapter tag (`04 RUMAH HIDUP`) |
 | **STUDIO-BENCH** | Persistent moody dark virtual studio set (`#11151C` concrete/walnut desk, practical desk lamp, wall monitor), focused top softbox key + rim light + shallow DoF (`f/2.8` bokeh) — reuse 1 set and swap only the hero prop per video | Deterministic PBR cutaway/macro 3D props (anisotropic metal, matte rubber, cooling fins, tubular spaceframe, tangible unit-analogy objects like marbles on a ruler) + in-world 2D charts mapped to studio screens; smooth dolly-in, low-angle orbit, and top-down schematic cuts | 3D-tracked dark frosted callout pins (`rgba(15,20,28,0.85)`) with `#38BDF8` cyan / `#F59E0B` amber anchor dot + thin vertical leader line + micro gray source citation + 1–2 keyword-highlighted bottom subtitles |
+| **SIM-GRID** | High-contrast dark neon blueprint grid floor (glowing cyan/blue axes) or persistent workshop workbench (pegboard + wood desk + desk lamp), `60.0 fps` WebGL/R3F + `UnrealBloomPass` emissive highlights & crisp shadow maps | **Physics-First Data-Driven Motion**: compute exact trajectories, 500 Hz RK4 ODEs, kinematic linkages, A* costmaps, or CNN convolution maps in `Python + NumPy`, export frame-locked JSON (`1/60s`), and drive Three.js `InstancedMesh` voxels/meshes deterministically (never fake physics with generic `easeInOut`) | Crisp LaTeX equations (`tan(theta) ~ a/g`, PID), per-cell numeric overlays (`0–255`, `g/h`), live waveform/quaternion HUD, and centered 1-line bold subtitles with green/blue active-word highlights |
 
 ---
 
@@ -71,3 +72,11 @@ When an explainer requires photorealistic macro PBR (anisotropic brushed copper/
 1. Model mechanical or cutaway hero props parametrically in `FORGE` (FreeCAD STEP/OBJ/glTF).
 2. Render in Blender Cycles/EEVEE (`blender-creation`) inside **1 reusable persistent studio `.blend` set** (swapping only the hero prop per episode).
 3. Composite 2D HUD callout pins, data charts, and `-14 LUFS` VO (`110–125 WPM`) via Remotion/FFmpeg.
+
+---
+
+## 7. Physics-First Simulation Pipeline (`Python/NumPy -> JSON -> 60fps Three.js/Remotion`)
+
+1. Run real physics or algorithm simulation in `Python + NumPy` (`500 Hz` RK4 ODE, Smac-2D A* pop-by-pop log, linkage circle-intersection solver, or CNN pixel kernel) and downsample state snapshots to `60 fps` JSON.
+2. Import JSON into Remotion + Three.js (`@remotion/three`) or Playwright WebGL to drive meshes, `InstancedMesh` voxel grids, glowing paths, and HUD readouts deterministically frame-by-frame.
+3. Pair with dense technical VO (`185–240 WPM`) and mechanical SFX mastered to `-14.4 LUFS`.
