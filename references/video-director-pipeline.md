@@ -12,6 +12,7 @@ Never study a reference Reel, TikTok, or Short by stepping through screenshots i
    ```powershell
    yt-dlp --no-playlist -f "bv*+ba/b" --merge-output-format mp4 -o "<scratch>\ref.%(ext)s" "<URL>"
    ```
+   - **Instagram Blocked Fallback (`Instagram sent an empty media response`):** Intercept the `video/` stream URL cleanly with Playwright (`page.on("response", ...)` matching `content-type: video/`, stripping `&bytestart`) to download the full 1080p MP4 stream.
 2. **Probe technical specs:**
    ```powershell
    ffprobe -v error -show_entries format=duration,bit_rate:stream=codec_type,codec_name,width,height,r_frame_rate -of json "<scratch>\ref.mp4"
@@ -57,6 +58,7 @@ Build scenes deterministically in **Remotion + Three.js / React / CSS** (zero Af
   - Bezier curve graphs, progress meters (`75%` / `25%`), and numeric countdown tickers.
   - **SaaS Launch Grammar:** 1 accent color + neutral grotesk (`Inter Tight`/`Inter`, `Geist`, `Instrument Sans`, `Bricolage Grotesque`, `Plus Jakarta Sans`), UI components that morph across **one continuous camera space**, **halftone dot-ripple** transitions, **3D UI slab tilt** (`2D -> 3D isometric`), tactile 3D hardware (`keycap macro-pad + LCD`), and **SFX-ONLY (NO MUSIC)**.
   - **Vox Editorial Collage Grammar:** Physical paper/newspaper objects on a desk, **torn-paper wipe transitions**, **yellow highlighter sweep**, **digit-by-digit odometer roll** (right-most digits spin fastest), **colour-drain desaturation** on dramatic beats, **animated partly on 2s** (`12/15 fps` tactile cadence inside `30 fps` render), and **SFX-ONLY (NO MUSIC)**.
+  - **Interactive SaaS Demo Card + Cutout Presenter (`@awananimasi.id`):** Graph-paper dark/saturated grid canvas (`#0F172A`, `#2E1065`, `#064E3B`, `#FACC15`, `#EA580C`), top-right `01..09` icon progress pill bar, macOS-framed live UI card with tab switching & animating charts, plus bottom-corner cutout presenter + pixel mascot helper with speech bubbles.
 - **3D Worlds & Camera Moves:**
   - Stylized 3D scenes (voxel/low-poly desk, director chair, holographic curved UI screens, floating 3D cartridge/handheld) with continuous orbital drift and eased dolly-ins.
   - Custom easing curves (`cubic-bezier` / `spring()`)—never linear motion on hero transitions.
