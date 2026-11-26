@@ -1,5 +1,5 @@
 ---
-name: ai-video-studio
+name: studio
 description: Unified local AI Video Director & production studio combining Talking-Head Auto-Editor (20 presets + 15 named effects + analyze_footage.py), 24+ 2D/2.5D Explainer Motion Graphics, 19+ Procedural 3D Three.js r186+ & Remotion styles, Video Director 5-stage pipeline (Loud-word beat tables, #00FF00/#000000 asset prompting, SFX-only mode, Pre-Final Visual Self-QA), and 15-repo Open-Source Video Stack.
 ---
 
