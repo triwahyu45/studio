@@ -1,4 +1,4 @@
-# studio — Local AI Video Director & Production Suite
+# STUDIO — Local AI Video Director & Production Suite
 
 AI Agent Skill for **Antigravity**, **Claude Code**, and **OpenAI Codex**. End-to-end local video production: talking-head auto-editor (20 presets + depth-text), 24+ 2D/2.5D motion graphics, 19+ procedural 3D Three.js styles, multi-provider TTS, BGM ducking, and 9:16 vertical kinematics.
 
@@ -10,13 +10,13 @@ Clone this skill into your agent's global or project skills directory:
 
 | Agent | Global Install Path | Project-Local Path |
 | :--- | :--- | :--- |
-| **Antigravity** | `~/.gemini/config/skills/studio` | `.agents/skills/studio` |
-| **Claude Code** | `~/.claude/skills/studio` | `.claude/skills/studio` |
-| **OpenAI Codex** | `~/.codex/skills/studio` | `.agents/skills/studio` |
+| **Antigravity** | `~/.gemini/config/skills/STUDIO` | `.agents/skills/STUDIO` |
+| **Claude Code** | `~/.claude/skills/STUDIO` | `.claude/skills/STUDIO` |
+| **OpenAI Codex** | `~/.codex/skills/STUDIO` | `.agents/skills/STUDIO` |
 
 ```bash
 # Example (Antigravity / Claude Code / Codex — pick your path):
-git clone https://github.com/triwahyu45/studio.git ~/.claude/skills/studio
+git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 ```
 
 ---
