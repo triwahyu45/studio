@@ -1,13 +1,52 @@
-# ai-video-studio
+# studio — Local AI Video Director & Production Suite
 
-Unified local AI Video Director & code-driven production suite (100% free & local via FFmpeg, `faster-whisper`, Remotion, Three.js r186+, and Playwright):
-- **Video Director 5-Stage Pipeline**: Reference deconstruction (`yt-dlp` + `ffprobe`), `Loud word` beat tables, `#00FF00`/`#000000` free asset prompting, SFX-only SaaS/Vox grammars, and mandatory Pre-Final Visual Self-QA.
-- **Talking-Head Creator Auto-Editor**: 20 visual presets + 15 named effects + `scripts/analyze_footage.py` + longform-to-shortform 5-dim viral clipper.
-- **2D/2.5D Explainer Mograph (24+ Styles)** & **Procedural 3D Motion (19+ Styles + Three.js r186+ Guardrails)**.
-- **Open-Source Video Stack**: Distilled workflows from 15 top GitHub video repos (`claude-shorts`, `threejs-skills`, `OpenMontage`, `MotionClone`, `Barty-Bart/motion-graphics`).
+AI Agent Skill for **Antigravity**, **Claude Code**, and **OpenAI Codex**. End-to-end local video production: talking-head auto-editor (20 presets + depth-text), 24+ 2D/2.5D motion graphics, 19+ procedural 3D Three.js styles, multi-provider TTS, BGM ducking, and 9:16 vertical kinematics.
 
-## Changelog
-- `v1.3.0`: Added Playwright Instagram network-interception fallback and `@awananimasi.id` Interactive SaaS Card + Cutout Presenter style.
-- `v1.2.0`: Added Mandatory Self-Audit & Revise-Before-Delivery Gate (`ffprobe` + visual contact-sheet inspection + `-14 LUFS`).
-- `v1.1.0`: Merged `lemo-opuscar-video` (Multi-TTS providers, audio ducking, 3D kinematics, and 9:16 vertical recipes).
-- `v1.0.0`: Initial unified release merging Video Director, Talking-Head Editor, 24+ 2D Mograph, 19+ 3D Three.js r186+, and 15-Repo Open-Source Stack.
+---
+
+## Quick Install (Claude Code / Codex / Antigravity)
+
+Clone this skill into your agent's global or project skills directory:
+
+| Agent | Global Install Path | Project-Local Path |
+| :--- | :--- | :--- |
+| **Antigravity** | `~/.gemini/config/skills/studio` | `.agents/skills/studio` |
+| **Claude Code** | `~/.claude/skills/studio` | `.claude/skills/studio` |
+| **OpenAI Codex** | `~/.codex/skills/studio` | `.agents/skills/studio` |
+
+```bash
+# Example (Antigravity / Claude Code / Codex — pick your path):
+git clone https://github.com/triwahyu45/studio.git ~/.claude/skills/studio
+```
+
+---
+
+## Requirements & Dependencies (For Agents)
+
+- **Runtime / Tools**: **Python 3.10+**, **FFmpeg**, **Node.js 18+** (for Remotion/Three.js), **faster-whisper** (local STT), **Playwright** (optional IG/web reference capture)
+- **MCP Servers**: Optional: `edge-tts-mcp` (free TTS), `ffmpeg-skill` / `kinocut` (timeline/cut helpers)
+- **Related Skills**: Optional pairing with [`director`](https://github.com/triwahyu45/director) & [`samurai`](https://github.com/triwahyu45/samurai)
+- **API Keys / Secrets**: None for local mode (`edge-tts`, `faster-whisper`, `FFmpeg`). Optional: `$GEMINI_API_KEY` or `$FISH_AUDIO_API_KEY` for cloud TTS.
+
+```json
+{
+  "mcpServers": {
+    "edge-tts-mcp": {
+      "command": "uvx",
+      "args": ["--with", "mcp[cli]<2", "--from", "edge-tts-mcp==0.1.1", "edge_tts_mcp"]
+    }
+  }
+}
+```
+
+---
+
+## Included Files
+
+- `SKILL.md` — Router, non-negotiable production rules, & Self-Audit Gate
+- `scripts/analyze_footage.py` — Silence & viral clip scoring analyzer
+- `references/` — `talking-head-presets.md`, `mograph-24-styles.md`, `motion3d-19-styles.md`, `video-director-pipeline.md`, `tts-providers.md`, `audio-ducking-sfx.md`, `3d-kinematics-engine.md`, `vertical-9-16-recipes.md`, `open-source-video-stack.md`
+
+## When to Trigger / Search Keywords
+
+`studio`, `talking-head edit`, `reels`, `tiktok`, `youtube shorts`, `explainer video`, `remotion`, `tts`, `audio ducking`, `cut dead air`
