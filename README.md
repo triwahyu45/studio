@@ -45,7 +45,7 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 
 - `SKILL.md` — Router, non-negotiable production rules, & Self-Audit Gate
 - `scripts/analyze_footage.py` — Silence & viral clip scoring analyzer
-- `references/` — `talking-head-presets.md`, `mograph-24-styles.md`, `motion3d-19-styles.md`, `video-director-pipeline.md`, `tts-providers.md`, `audio-ducking-sfx.md`, `3d-kinematics-engine.md`, `vertical-9-16-recipes.md`, `open-source-video-stack.md`
+- `references/` — `talking-head-presets.md`, `mograph-24-styles.md`, `motion3d-19-styles.md`, `video-director-pipeline.md`, `tts-providers.md`, `audio-ducking-sfx.md`, `3d-kinematics-engine.md`, `vertical-9-16-recipes.md`, `remotion-and-story-shorts.md`, `open-source-video-stack.md`
 
 ## When to Trigger / Search Keywords
 
