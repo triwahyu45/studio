@@ -27,3 +27,10 @@ Complete, 100% free local code-driven video production suite (FFmpeg, `faster-wh
 1. **Pre-Final Visual Self-QA Gate**: Render a fast test pass/contact sheet first and inspect for text overlap, label collision, hard bottom edges on screen-blended fire/effects, cropped push-in text, and `#00FF00` halos before final render.
 2. **Audio & Loudness**: Prefer **SFX-ONLY (no music)** for SaaS Launch & Vox Editorial cuts, or duck BGM under narration; verify `-14 LUFS` & H.264/AAC via `ffprobe`.
 3. **Safe Margins (9:16)**: Keep captions inside `top >= 14%`, `bottom <= 78%`, `right >= 120px` on `1080x1920`.
+---
+
+## Mandatory Self-Audit & Revise-Before-Delivery Gate
+
+Before delivering any video:
+1. Render a fast test pass / contact sheet first and inspect via `read_file` for text overlap, cropped push-ins, hard effect edges, or `#00FF00` halos.
+2. Fix every defect found, then run final render and verify resolution, fps, H.264/AAC, and `-14 LUFS` via `ffprobe`.

@@ -7,5 +7,6 @@ Unified local AI Video Director & code-driven production suite (100% free & loca
 - **Open-Source Video Stack**: Distilled workflows from 15 top GitHub video repos (`claude-shorts`, `threejs-skills`, `OpenMontage`, `MotionClone`, `Barty-Bart/motion-graphics`).
 
 ## Changelog
+- `v1.2.0`: Added Mandatory Self-Audit & Revise-Before-Delivery Gate (`ffprobe` + visual contact-sheet inspection + `-14 LUFS`).
 - `v1.1.0`: Merged `lemo-opuscar-video` (Multi-TTS providers, audio ducking, 3D kinematics, and 9:16 vertical recipes).
 - `v1.0.0`: Initial unified release merging Video Director, Talking-Head Editor, 24+ 2D Mograph, 19+ 3D Three.js r186+, and 15-Repo Open-Source Stack.
