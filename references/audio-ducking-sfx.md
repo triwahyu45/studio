@@ -47,3 +47,19 @@ bass = 0.2 * np.sin(2 * np.pi * bass_freq * t) * (0.5 + 0.5 * np.sin(2 * np.pi *
 mix = kick * 0.4 + hat * 0.2 + bass * 0.3
 wav.write("synth_bgm.wav", sr, (mix * 32767).astype(np.int16))
 ```
+
+---
+
+## 4. Free Zero-Key Audio & SFX Stack (`earshot`, `opus-sound-layer`, `Openverse`)
+
+Prefer real acoustic SFX and CC0/CC-licensed recordings over pure sine synthesis whenever an authentic foley, UI click, whoosh, or ambient bed is needed:
+
+1. **`earshot` MCP (`Leonxlnx/earshot`, MIT)** — Local audio design & foley studio (922 procedural sound designs, 252 film SFX bank, 20 MCP tools).
+   - Inspect/generate/layer SFX directly via the `earshot` MCP tools, or CLI: `earshot doctor`, `earshot search <query>`, `earshot render ...`.
+   - Use for UI clicks, cinematic risers/whooshes, mechanical impacts, and acoustic stingers with zero cloud API keys.
+2. **`opus-sound-layer` (`Bodila51/opus-sound-layer`, MIT)** — 1,139 CC0 public-domain field recordings & foley layers ready for commercial use without attribution.
+3. **Openverse Audio API (`api.openverse.org`)** — 5.2M+ Creative Commons audio tracks & SFX with **zero API key required**:
+   ```bash
+   curl -s "https://api.openverse.org/v1/audio/?q=cinematic+ambient&license_type=commercial&page_size=5"
+   ```
+   - Filter `license_type=commercial` (or `cc0` / `pdm`) and inspect `results[].url` + `results[].license` before downloading and muxing with Section 1 FFmpeg ducking.

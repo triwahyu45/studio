@@ -24,7 +24,7 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 ## Requirements & Dependencies (For Agents)
 
 - **Runtime / Tools**: **Python 3.10+**, **FFmpeg**, **Node.js 18+** (for Remotion/Three.js), **faster-whisper** (local STT), **Playwright** (optional IG/web reference capture)
-- **MCP Servers**: Optional: `edge-tts-mcp` (free TTS), `ffmpeg-skill` / `kinocut` (timeline/cut helpers)
+- **MCP Servers**: Optional: `edge-tts-mcp` (free TTS), `earshot` (local 922-design + 252-film-SFX foley MCP), `ffmpeg-skill` / `kinocut` (timeline/cut helpers)
 - **Related Skills**: Optional pairing with [`director`](https://github.com/triwahyu45/DIRECTOR) & [`samurai`](https://github.com/triwahyu45/SAMURAI)
 - **API Keys / Secrets**: None for local mode (`edge-tts`, `faster-whisper`, `FFmpeg`). Optional: `$GEMINI_API_KEY` or `$FISH_AUDIO_API_KEY` for cloud TTS.
 

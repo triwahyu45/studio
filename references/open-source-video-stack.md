@@ -23,6 +23,8 @@ Distilled workflows and benchmarks from the 15 open-source GitHub repositories f
 | 13 | `Bujiazi/MotionClone` | Duplicate of #12 (`LPengYang/MotionClone`) | Same ICLR 2025 MotionClone paper |
 | 14 | `heygen-com/hyperframes` | **Installed / Hubbed** (`ai-video-generation-hub`) | HTML/CSS/GSAP multi-track timeline renderer (note: ~23 min for 15s brief) |
 | 15 | `zhuyansen/awesome-claude-video-skills` | **Active (★2.6k)** | 16 end-to-end timed benchmarks & security-graded catalog (`agentskillshub.top`) |
+| 16 | `Leonxlnx/earshot` | **Installed (MCP)** | Local audio/foley studio (922 designs, 252 film SFX bank, 20 MCP tools, MIT) |
+| 17 | `Bodila51/opus-sound-layer` + `Openverse API` | **Reference / Zero-Key** | 1,139 CC0 recordings (`opus-sound-layer`) + 5.2M+ CC audio search (`api.openverse.org/v1/audio/`, no key) |
 
 ---
 

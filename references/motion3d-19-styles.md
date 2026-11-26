@@ -26,6 +26,7 @@ Production blueprints for rendering 60fps/30fps procedural 3D shorts (9:16 `1080
 | **WORLDFORGE-ROMA** | Golden-hour directional sun (`#FDBA74`) + crisp `PCFSoftShadowMap` | Procedural `InstancedMesh` classical terracotta-roof city grid + marble forum columns + slow aerial dolly/orbit | Bold wide-tracked white uppercase title (`R O M A`) |
 | **WORLDFORGE-MARS** | Rusty Martian sun + atmospheric orange-red fog (`#9A3412`) | Procedural sci-fi geodesic habitat domes, pressurized tubes, solar arrays, and red terrain heightmap | Clean aerial orbit camera over dusty surface |
 | **NEGERI** | Bright daylight isometric orthocam | Low-poly green terrain tiles, miniature houses, roads, and trees popping up sequentially | Floating white rounded HUD card (`POPULASI 12.029 warga`) + top day pill (`HARI 1`) |
+| **VOXEL-TERMINAL SPLIT** | Split-screen dark terminal (`#0B0F14`) + crisp isometric pastel/clay 3D voxel stage | Top/bottom or left/right split: animated CLI/code typewriter with syntax-highlighted output synced to an isometric 3D voxel/clay miniature scene reacting to each command | Monospace status pill (`EXEC 01`) + subtle scanline/cursor pulse (`> _`) |
 
 ---
 
