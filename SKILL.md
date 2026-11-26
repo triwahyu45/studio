@@ -6,6 +6,7 @@ description: Unified local AI Video Director & production studio combining Talki
 # AI Video Studio (Unified Director & Local Production Suite)
 
 Complete, 100% free local code-driven video production suite (FFmpeg, `faster-whisper`, Remotion, Three.js r186+, Playwright/Canvas2D) — zero paid SaaS subscriptions or diffusion slop.
+- **Sibling Boundaries**: **`DIRECTOR`** owns creative direction, treatments, 11-block blueprints, and 3-pass critic QA; **`ATELIER`** owns headless Blender PBR/Cycles rendering; **`SONIC`** owns TTS, `earshot` SFX, ducking, and `-14 LUFS` audio mastering.
 
 ---
 
@@ -18,7 +19,7 @@ Complete, 100% free local code-driven video production suite (FFmpeg, `faster-wh
 | **Procedural 3D Motion (Three.js r186+)** | [`references/motion3d-19-styles.md`](references/motion3d-19-styles.md) | Exploded hardware (`PRECISION`, `BONGKAR`), Voxel/HD-2D (`VOXELVERSE`, `PIXELSTORY`), Paperworld dioramas, & R3F/WebGPU guardrails |
 | **Reference Deconstruction & Directing** | [`references/video-director-pipeline.md`](references/video-director-pipeline.md) | `yt-dlp` + `ffprobe` + `Loud word` beat tables, `#00FF00`/`#000000` free asset prompts, SFX-only SaaS/Vox grammar, & Pre-Final Visual Self-QA |
 | **Open-Source Video Tooling & Benchmarks** | [`references/open-source-video-stack.md`](references/open-source-video-stack.md) | 15-repo stack (`claude-shorts`, `threejs-skills`, `OpenMontage`, `MotionClone`, `Barty-Bart`, render speed benchmarks) |
-| **Multi-TTS, Audio Ducking & 9:16 Kinematics** | [`references/tts-providers.md`](references/tts-providers.md) + [`references/audio-ducking-sfx.md`](references/audio-ducking-sfx.md) + [`references/3d-kinematics-engine.md`](references/3d-kinematics-engine.md) + [`references/vertical-9-16-recipes.md`](references/vertical-9-16-recipes.md) | Gemini API / Fish Audio / Edge-TTS voiceovers, sidechain BGM ducking, & 9:16 web-animation kinematics |
+| **Audio, TTS & `-14 LUFS` Mastering** | Delegate to **`SONIC`** + [`references/3d-kinematics-engine.md`](references/3d-kinematics-engine.md) + [`references/vertical-9-16-recipes.md`](references/vertical-9-16-recipes.md) | Multi-provider TTS, `earshot`/Openverse SFX, sidechain BGM ducking, `-14 LUFS`, & 9:16 web kinematics |
 | **Remotion, Cartoon 3D Shorts & Sketch-to-3D** | [`references/remotion-and-story-shorts.md`](references/remotion-and-story-shorts.md) | React/Three.js Remotion compositions (`1080x1920` / `--scale 1.3333`), 45–70s `words.json` synced story shorts, & marker sketch reveals |
 
 ---

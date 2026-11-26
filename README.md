@@ -24,9 +24,9 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 ## Requirements & Dependencies (For Agents)
 
 - **Runtime / Tools**: **Python 3.10+**, **FFmpeg**, **Node.js 18+** (for Remotion/Three.js), **faster-whisper** (local STT), **Playwright** (optional IG/web reference capture)
-- **MCP Servers**: Optional: `edge-tts-mcp` (free TTS), `earshot` (local 922-design + 252-film-SFX foley MCP), `ffmpeg-skill` / `kinocut` (timeline/cut helpers)
-- **Related Skills**: Optional pairing with [`director`](https://github.com/triwahyu45/DIRECTOR) & [`samurai`](https://github.com/triwahyu45/SAMURAI)
-- **API Keys / Secrets**: None for local mode (`edge-tts`, `faster-whisper`, `FFmpeg`). Optional: `$GEMINI_API_KEY` or `$FISH_AUDIO_API_KEY` for cloud TTS.
+- **MCP Servers**: Optional: `ffmpeg-skill` / `kinocut` (timeline/cut helpers); pair with `SONIC` (`earshot`, `edge-tts-mcp`) for audio
+- **Related Skills**: Pairs with [`DIRECTOR`](https://github.com/triwahyu45/DIRECTOR), [`SAMURAI`](https://github.com/triwahyu45/SAMURAI), [`SONIC`](https://github.com/triwahyu45/SONIC) (audio/TTS/SFX), & [`ATELIER`](https://github.com/triwahyu45/ATELIER) (Blender PBR)
+- **API Keys / Secrets**: None for local mode (`faster-whisper`, `FFmpeg`, Three.js/Remotion).
 
 ```json
 {
@@ -45,7 +45,7 @@ git clone https://github.com/triwahyu45/STUDIO.git ~/.claude/skills/STUDIO
 
 - `SKILL.md` — Router, non-negotiable production rules, & Self-Audit Gate
 - `scripts/analyze_footage.py` — Silence & viral clip scoring analyzer
-- `references/` — `talking-head-presets.md`, `mograph-24-styles.md`, `motion3d-19-styles.md`, `video-director-pipeline.md`, `tts-providers.md`, `audio-ducking-sfx.md`, `3d-kinematics-engine.md`, `vertical-9-16-recipes.md`, `remotion-and-story-shorts.md`, `open-source-video-stack.md`
+- `references/` — `talking-head-presets.md`, `mograph-24-styles.md`, `motion3d-19-styles.md`, `video-director-pipeline.md`, `3d-kinematics-engine.md`, `vertical-9-16-recipes.md`, `remotion-and-story-shorts.md`, `open-source-video-stack.md`
 
 ## When to Trigger / Search Keywords
 
