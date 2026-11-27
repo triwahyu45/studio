@@ -25,6 +25,7 @@ Never study a reference Reel, TikTok, or Short by stepping through screenshots i
    - **Typography Hierarchy:** Display weight, highlight box style, tabular counters, and kinetic entry timing.
    - **Motion Grammar:** Bezier easing curves, spring damping, whip-pan transitions, match-cut camera zooms (e.g. zooming through a monitor into a 3D scene).
    - **SFX Map:** Risers, whooshes, mechanical clicks, bass hits, and voice pacing.
+4. **Stage 1B — Automated Shot-Level Forensics (`rea-video` / `VIDEO.md`):** For multi-method reference videos (mixed live-action, AI video, 3D render, and coded motion), run [`references/rea-video-forensics.md`](rea-video-forensics.md) (`rea-video decompose` -> read `VIDEO.md` layer-by-layer) to classify every shot and route remakes into `STUDIO`, `KURA`, `ATELIER`, `SAMURAI`, `SONIC`, or `SIGNAL`.
 
 ---
 
